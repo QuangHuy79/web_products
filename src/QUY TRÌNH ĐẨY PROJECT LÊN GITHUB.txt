@@ -1,0 +1,78 @@
+✅ TÓM TẮT QUY TRÌNH ĐẨY PROJECT LÊN GITHUB KHI CHƯA INIT GIT
+Giả sử:
+
+Bạn đã tạo repo sẵn trên GitHub (ví dụ: https://github.com/QuangHuy79/abc-project.git)
+
+Trên máy bạn có thư mục chứa project nhưng chưa git init
+
+💡 CÁC BƯỚC CHI TIẾT:
+✅ Bước 1: Mở terminal/cmd vào thư mục dự án
+bash
+Sao chép
+Chỉnh sửa
+cd đường/dẫn/đến/thư/mục/project
+Ví dụ của bạn:
+
+bash
+Sao chép
+Chỉnh sửa
+cd "D:/Tin hoc-Lap trinh/Lap trinh/New Javascript/JS/React.js/web_products"
+✅ Bước 2: Khởi tạo Git local
+bash
+Sao chép
+Chỉnh sửa
+git init
+Tạo thư mục .git trong dự án — chính thức biến nó thành repo Git.
+
+✅ Bước 3: Đổi branch về main (để khớp với GitHub)
+bash
+Sao chép
+Chỉnh sửa
+git branch -M main
+✅ Bước 4: Thêm tất cả file vào staging
+bash
+Sao chép
+Chỉnh sửa
+git add .
+✅ Bước 5: Commit lần đầu
+bash
+Sao chép
+Chỉnh sửa
+git commit -m "Initial commit"
+✅ Bước 6: Gắn repo GitHub từ xa (remote)
+bash
+Sao chép
+Chỉnh sửa
+git remote add origin https://github.com/QuangHuy79/abc-project.git
+⚠️ Thay link bằng repo thật của bạn
+
+✅ Bước 7: (QUAN TRỌNG) Do repo GitHub đã có file từ trước → cần pull để hợp nhất
+bash
+Sao chép
+Chỉnh sửa
+git pull origin main --allow-unrelated-histories
+Lúc này có thể mở trình chỉnh sửa merge message → chỉ cần Esc, gõ :wq, Enter là xong
+
+✅ Bước 8: Đẩy code lên GitHub
+bash
+Sao chép
+Chỉnh sửa
+git push -u origin main
+✅ Sau đó: Mỗi lần cập nhật chỉ cần
+bash
+Sao chép
+Chỉnh sửa
+git add .
+git commit -m "Nội dung cập nhật"
+git push
+🔁 Tóm tắt nhanh cho lần sau:
+bash
+Sao chép
+Chỉnh sửa
+git init
+git branch -M main
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/yourname/your-repo.git
+git pull origin main --allow-unrelated-histories
+git push -u origin main
