@@ -1,0 +1,58 @@
+✅ TOÀN BỘ QUY TRÌNH: Đăng ký project lên GitHub TỪ LOCAL
+🔹 Bước 1: Trên GitHub – tạo repo mới
+Vào https://github.com/new
+
+Điền:
+
+Repository name: login-form (hoặc gì bạn thích)
+
+Không cần tick Add README.md
+
+Nhấn nút "Create repository"
+
+→ Sẽ hiện ra trang có dòng hướng dẫn git remote add origin ...
+
+🔹 Bước 2: Trên máy – khởi tạo Git project
+Vào terminal trong thư mục dự án:
+
+bash
+Sao chép
+Chỉnh sửa
+cd đường/dẫn/đến/project
+git init
+git branch -M main
+git add .
+git commit -m "Initial commit"
+🔹 Bước 3: Gắn link repo GitHub vào
+Copy link từ GitHub (https):
+
+bash
+Sao chép
+Chỉnh sửa
+git remote add origin https://github.com/QuangHuy79/login-form.git
+🔹 Bước 4: Đẩy project lên GitHub lần đầu
+Vì GitHub repo đang trống hoàn toàn, nên chỉ cần:
+
+bash
+Sao chép
+Chỉnh sửa
+git push -u origin main
+→ Xong luôn, không cần pull vì không có gì để hợp nhất.
+
+🔹 Sau đó, mỗi lần cập nhật chỉ cần:
+bash
+Sao chép
+Chỉnh sửa
+git add .
+git commit -m "Update tính năng đăng ký"
+git push
+🔁 Tóm gọn lại: (quy trình bạn cần nhớ)
+bash
+Sao chép
+Chỉnh sửa
+git init
+git branch -M main
+git add .
+git commit -m "Initial commit"
+git remote add origin <link-repo>
+git push -u origin main
