@@ -1,0 +1,18 @@
+Tạo dự án với Vite:
+a. Gõ lệnh sau và làm theo hướng dẫn để tạo mới dự án React, ở đây đặt tên là 3.my-react-app:
+npm create vite@latest
+Set-ExecutionPolicy RemoteSigned nếu bị lỗi như trong video thì mới cần dùng lệnh này.
+b. Di chuyển vào project:
+cd <tên project>
+Ví dụ :
+cd 3.my-react-app
+//PS nếu VSCode báo lỗi dưới đây:
+(D:\Tin hoc-Lap trinh\Lap trinh\New Javascript\JS\React.js> npm create vite@latest
+npm : File C:\Program Files\nodejs\npm.ps1 cannot be loaded because running scripts is disabled on this 
+system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ npm create vite@latest
++ ~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess)
+Vào windows powershell chạy với lệnh Administrator sau đó dán lệnh "Set-ExecutionPolicy RemoteSigned" và nhấn Enter   
